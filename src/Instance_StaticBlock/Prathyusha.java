@@ -4,7 +4,11 @@ package Instance_StaticBlock;
         int a = 10;//instance variables
         int b = 9;
 
-        public void main(String[] args) { //static variable so we need to create object and access instance variable/
+        static {
+            System.out.println("Static block");
+        }
+
+        public static void main(String[] args) { //static variable so we need to create object and access instance variable/
             Prathyusha newObj = new Prathyusha();
             System.out.println(newObj.b);
         }
